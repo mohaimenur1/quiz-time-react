@@ -11,7 +11,7 @@ const Card = ({ quiz }) => {
           <h5 className="card-title">{name}</h5>
           <p className="card-text">{total}</p>
           <a href="#" className="btn btn-primary">
-            Take over to quiz
+            Go through quiz
           </a>
         </div>
       </div>
