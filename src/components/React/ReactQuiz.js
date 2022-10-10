@@ -1,6 +1,6 @@
 import React from "react";
 
-const React = () => {
+const ReactQuiz = () => {
   return (
     <div>
       <h1>react page</h1>
@@ -8,4 +8,4 @@ const React = () => {
   );
 };
 
-export default React;
+export default ReactQuiz;
