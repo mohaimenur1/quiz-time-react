@@ -1,0 +1,13 @@
+.card {
+  background: rgba(43, 72, 101, 0.45);
+  outline: none;
+  border: none;
+}
+.card-btn {
+  background-color: #002b5b;
+  border: none;
+}
+
+.card-btn:hover {
+  background-color: #0f498bf1;
+}
