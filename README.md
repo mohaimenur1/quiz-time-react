@@ -1,6 +1,6 @@
 # Quiz Time
 
-Live website link [Quiz Time]().
+Live website link [Quiz Time](https://shiny-pika-791cf8.netlify.app/).
 
 ## Project Description
 
