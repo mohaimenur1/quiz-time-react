@@ -4,6 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Options = ({ option, correctAnswer }) => {
+  const [show, setShow] = useState(false);
   // console.log(correctAnswer);
   // if(correctAnswer === )
   // const [hover, setHover] = useState(false);
@@ -19,6 +20,7 @@ const Options = ({ option, correctAnswer }) => {
   const notify = (option) => {
     toast(correctAnswer === option ? "correct answer!" : "Wrong Answer");
     console.log(correctAnswer);
+    setShow(true);
   };
 
   return (
@@ -26,25 +28,27 @@ const Options = ({ option, correctAnswer }) => {
       <div className="col mt-3 p-3 d-flex flex-column justify-content-center">
         <button
           onClick={() => notify(option)}
-          type="button"
+          // type="button"
           className="option-btn rounded-pill"
           // data-bs-toggle="button"
         >
           {/* <h4>{option}</h4> */}
           {option}
         </button>
-        <ToastContainer
-          position="top-center"
-          autoClose={4000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
+        {/* {show && (
+          <ToastContainer
+            position="top-center"
+            autoClose={4000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+          />
+        )} */}
       </div>
     </div>
   );

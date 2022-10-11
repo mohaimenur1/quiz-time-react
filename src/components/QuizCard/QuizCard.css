@@ -5,3 +5,7 @@
 .option {
   background-color: #9aa7b4;
 }
+
+i {
+  cursor: pointer;
+}
