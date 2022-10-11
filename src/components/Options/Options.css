@@ -1,0 +1,8 @@
+.option-btn {
+  border: none;
+}
+
+.option-btn:hover {
+  background-color: #002b5b;
+  color: white;
+}

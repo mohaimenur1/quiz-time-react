@@ -10,16 +10,18 @@ const Quiz = () => {
   const questions = quizs.questions;
   console.log(questions);
   return (
-    <div className="row mt-3">
-      <div className="logo d-flex justify-content-center">
+    <div className="mt-3 d-flex flex-column justify-content-center align-items-center">
+      <div className="logo d-flex justify-content-center align-items-center">
         <img className="img-fluid logo-resize" src={quizs.logo} alt="" />
       </div>
       <h1 className="mt-3">
         Quiz For <span>{quizs.name}</span>{" "}
       </h1>
-      {questions.map((question) => {
-        return <QuizCard key={question.id} question={question} />;
-      })}
+      <div className="">
+        {questions.map((question) => {
+          return <QuizCard key={question.id} question={question} />;
+        })}
+      </div>
     </div>
   );
 };

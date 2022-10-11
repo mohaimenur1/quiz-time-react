@@ -2,3 +2,10 @@
   width: 9.375rem;
   height: 9.375rem;
 }
+
+.logo {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: #9aa7b4;
+}

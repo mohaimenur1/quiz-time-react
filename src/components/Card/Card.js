@@ -7,7 +7,7 @@ const Card = ({ quiz }) => {
   const { id, name, logo, total } = quiz;
   return (
     <div className="col-lg-3">
-      <div className="card rounded-4 mt-3 shadow">
+      <div className="card rounded-4 mt-3 shadow rounded-4">
         <img
           src={logo}
           className="card-img-top img-fluid p-2 rounded-4"
