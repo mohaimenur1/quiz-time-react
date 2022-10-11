@@ -33,7 +33,18 @@ const Options = ({ option, correctAnswer }) => {
           {/* <h4>{option}</h4> */}
           {option}
         </button>
-        <ToastContainer />
+        <ToastContainer
+          position="top-center"
+          autoClose={4000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
       </div>
     </div>
   );
