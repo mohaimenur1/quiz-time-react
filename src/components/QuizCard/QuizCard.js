@@ -4,7 +4,7 @@ import "./QuizCard.css";
 
 const QuizCard = ({ question }) => {
   console.log(question);
-  const { options } = question;
+  const { options, correctAnswer } = question;
   console.log(options);
   //   const { id, question, correctAnswer } = question;
   return (
@@ -18,8 +18,17 @@ const QuizCard = ({ question }) => {
           <div className="option p-3">
             {/* <h5 className="d-block">{question.options}</h5> */}
             {options.map((option) => {
-              return <Options key={option} option={option} />;
+              return (
+                <Options
+                  key={option}
+                  option={option}
+                  correctAnswer={correctAnswer}
+                />
+              );
             })}
+            {/* <div className="d-flex flex-column">
+              <button>{options}</button>
+            </div> */}
           </div>
         </div>
       </div>

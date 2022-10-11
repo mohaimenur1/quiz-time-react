@@ -1,8 +1,14 @@
 .option-btn {
   border: none;
+  background-color: white;
 }
 
 .option-btn:hover {
+  background-color: #002b5b;
+  color: white;
+}
+
+.new-color {
   background-color: #002b5b;
   color: white;
 }
